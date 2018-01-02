@@ -1,0 +1,74 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/client/css/style.css?v=1.3">
+    
+    <title>Shootz.io - Multiplayer Shooter Arena!</title>
+    
+    </head>
+    
+    <body oncontextmenu="return false;">
+    <div id="homeDiv" style="position: fixed; top: 50; left: 0; right:0">
+    <center>
+    <div style="width:350; background-color:#F3F3F3; padding:10">
+    <h1>Shootz.io</h1>
+    <p>Mouse: control movement</p>
+    <p>Left button: shoot, Right button: dash</p>
+    <div id="signDiv" style="margin:20">
+        <input id="signDiv-username" type="text" placeholder="Enter Name" maxlength="15"></input>
+        <button id="signDiv-signIn" class="button">Play</button>
+        <div id="spawnMessage" style=" z-index:10; display:none">You'll spawn with 0 score!</div>
+        
+    <!-- Like -->
+    <div style="margin:10">
+        <div class="fb-like" data-href="https://www.facebook.com/gleamplay/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+        <a href="https://twitter.com/gleamplay" class="twitter-follow-button" data-show-screen-name="false" data-size="large" data-show-count="false">Follow</a>
+        <div class="g-ytsubscribe" data-channelid="UC69JEwYtmswOIokqBfJhi9Q" data-layout="default" data-count="default"></div>
+    </div>
+    <!-- -->
+    </div>
+    <div style="background:#363233; width:336; height:280">
+    </div>
+    </div>
+    </center>        
+        <div style="position: fixed; bottom: 20; right: 20">
+            <a href="http://iogames.space" target="_blank">More IO Games | </a>
+            <a href="https://goo.gl/forms/JxtHCKU9hjGucGXL2" target="_blank">Contact Us | </a>
+            <a href="#">Updates</a>
+        </div>
+    </div>
+    
+    <div id="gameDiv" style="display:none;">
+        <canvas id="ctx"></canvas>
+    </div>
+    
+    <script src="/client/lib/socket.js"></script>
+    <!--
+    <script src="/client/lib/bucketsJS/buckets.min.js"></script>
+    -->
+    <script src="/client/js/game.js?v=1.3"></script>
+    
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-29543980-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+    </body>
+    </html>
+    
+    
+    

@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: #4747b2;
+	font-family: sans-serif;
+	color: #363233;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: F3F3F3;
+    padding: 15px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+a:link, a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
